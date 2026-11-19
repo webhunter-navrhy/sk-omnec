@@ -5,7 +5,7 @@
 <meta name="description" content="OMNEC s.r.o. Trebišov – výroba, dodávka a montáž oceľových konštrukcií, stavba priemyselných objektov, opláštenie a zastrešenie. Od roku 2006.">
 <link rel="icon" href="img/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap&subset=latin-ext" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1a7c3e"></head><body>
+<link rel="stylesheet" href="style.css?v=2b8d41"></head><body>
 <header class="top"><a href="#top"><img src="img/logo.png" alt="OMNEC" width="246" height="50"></a>
 <input type="checkbox" id="mn" hidden><label for="mn" class="burger" aria-label="Menu"><span></span><span></span><span></span></label>
 <nav><a href="#sluzby">Služby</a><a href="#certifikaty">Certifikáty</a><a href="#referencie">Referencie</a><a href="#o-nas">Firma</a><a href="#kontakt">Kontakt</a></nav></header>
@@ -31,7 +31,7 @@
 
 <section id="referencie"><p class="eyebrow">Referencie</p><h2>Z našich realizácií</h2>
 <p class="sub">Generálny dodávateľ pre Vinárstvo Tokaj &amp; Co, s.r.o. (2019 – 2021).</p>
-<div class="gal"><img src="img/vinarstvo.jpg" alt="Vinárstvo Tokaj &amp; Co" loading="lazy" width="640" height="480"><img src="img/p2.jpg" alt="Realizácia OMNEC" loading="lazy" width="546" height="468"><img src="img/p3.jpg" alt="Realizácia OMNEC – štadión" loading="lazy" width="549" height="468"></div></section>
+<div class="slider" id="sl"><img src="img/vinarstvo.jpg" alt="Vinárstvo Tokaj &amp; Co" loading="lazy" class=on><img src="img/p2.jpg" alt="Realizácia OMNEC" loading="lazy"><img src="img/p3.jpg" alt="Realizácia OMNEC – štadión" loading="lazy"><button class="pv" aria-label="Predošlá">‹</button><button class="nx" aria-label="Ďalšia">›</button></div><p class="sub" style="margin-top:10px;font-size:14px">Fotky sa menia automaticky, kliknutím na fotku ju zväčšíte.</p><div class="lb" id="lb"><img alt=""></div></section>
 
 <section class="band" id="o-nas"><div><p class="eyebrow">Firma</p><h2>Výrobná spoločnosť z Trebišova</h2>
 <p class="sub">OMNEC s.r.o. bola založená v roku 2006. Cieľom je spokojnosť zákazníka s kvalitou vyrábaných a dodávaných produktov a služieb.</p>
@@ -42,4 +42,7 @@
 <p>Telefón: <a href="tel:+421566883873">056 / 688 38 73</a><br>E-mail: <a href="mailto:omnec@omnec.sk">omnec@omnec.sk</a><br>Sekretariát: <a href="mailto:sekretariat@omnec.sk">sekretariat@omnec.sk</a></p></div>
 <form onsubmit="return false"><input placeholder="Vaše meno"><input placeholder="Váš e-mail"><textarea rows="5" placeholder="Vaša správa"></textarea><button>Odoslať (v náhľade len ukážka)</button></form></section>
 <footer>OMNEC s.r.o. · Náhľad nového webu pripravil WebHunter</footer>
+<script>(function(){var s=document.getElementById('sl'),im=s.querySelectorAll('img'),i=0,t;function go(n){im[i].classList.remove('on');i=(n+im.length)%im.length;im[i].classList.add('on')}function st(){clearInterval(t);t=setInterval(function(){go(i+1)},4000)}
+s.querySelector('.pv').onclick=function(e){e.stopPropagation();go(i-1);st()};s.querySelector('.nx').onclick=function(e){e.stopPropagation();go(i+1);st()};
+var lb=document.getElementById('lb');im.forEach(function(x){x.onclick=function(){lb.firstChild.src=x.src;lb.classList.add('open')}});lb.onclick=function(){lb.classList.remove('open')};st()})()</script>
 </body></html>
