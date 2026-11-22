@@ -36,7 +36,7 @@ nav{display:none;position:absolute;top:100%;left:0;right:0;background:#222;paddi
 .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 60px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-weight:600;z-index:1;pointer-events:none}
 
 
-.hbg{position:absolute;inset:0;z-index:0}.hbg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,20,.88),rgba(20,20,20,.55))}
+.hbg{position:absolute;inset:0;z-index:0}.hbg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,20,.82) 0%,rgba(20,20,20,.45) 45%,rgba(20,20,20,.08) 100%)}
 .hbg i{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s}.hbg i.on{opacity:1}
 .hero p{color:#e4e4e4}
 .rg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:30px}
