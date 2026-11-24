@@ -48,3 +48,5 @@ nav{display:none;position:absolute;top:100%;left:0;right:0;background:#222;paddi
 .lb .lp{left:8px;top:50%;transform:translateY(-50%)}.lb .ln{right:8px;top:50%;transform:translateY(-50%)}.lb .lx{right:8px;top:8px;height:48px}
 .lb .lc{position:absolute;left:0;right:0;bottom:12px;text-align:center;color:#fff;font-weight:600}.lb{cursor:default}
 @media(max-width:800px){.hero{padding:70px 5vw}}
+
+.vg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}.vg img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;display:block}@media(max-width:700px){.vg{grid-template-columns:1fr}}
